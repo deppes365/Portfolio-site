@@ -1,0 +1,73 @@
+@import "../../assets/variables.scss";
+@import "../../assets/mixins.scss";
+@import "../../assets/breakpoints.scss";
+
+.contact {
+    @include pageSetup;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+    .page-title {
+        color: white;
+        font-weight: 200;
+        width: 100%;
+        text-align: center;
+        margin: 2rem 0;
+        
+        span {
+            color: springgreen
+        }
+    }
+    .container {
+        @include container(row, space-evenly, stretch);
+        gap: 2rem;
+        padding-bottom: 4rem;
+
+        .form {
+            flex-basis: 40%;
+            @include md {
+                flex-basis: 80%;
+            }
+
+            @include sm {
+                flex-basis: 95%;
+            }
+        }
+        .contact-links {
+            flex-basis: 40%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            @include md {
+                flex-basis: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            
+
+            .link {
+                margin: 1rem;
+                width: 100%;
+                display: inline-block;
+                @include md {
+                    text-align: center;
+                }
+            }
+
+            .icon {
+                font-size: 2rem;
+                color: springgreen;
+            }
+            p {
+                display: inline-block;
+                margin-left: 1rem;
+                font-size: 1.2rem;
+                font-weight: 200;
+            }
+        }
+    }
+}

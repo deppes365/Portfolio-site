@@ -1,0 +1,26 @@
+@import '../../assets/mixins.scss';
+@import '../../assets/variables.scss';
+@import "../../assets/breakpoints.scss";
+
+.portfolio {
+    @include pageSetup;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+    .page-title {
+        color: white;
+        font-weight: 200;
+        width: 100%;
+        text-align: center;
+        margin: 2rem 0;
+        
+        span {
+            color: springgreen
+        }
+    }
+    .container {
+        @include container(row, center, stretch);
+        gap: 2rem;
+    }
+}

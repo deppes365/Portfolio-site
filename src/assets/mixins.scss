@@ -1,0 +1,24 @@
+@import "./variables.scss";
+
+@mixin pageSetup {
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 3.5rem);
+    margin-top: 3.5rem;
+    scroll-margin-top: 3.5rem;
+    background-color: $dark;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin container($dir: row, $just: center, $ali: center) {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $ali;
+    flex-wrap: wrap;
+    padding: 1rem;
+    min-height: 100%;
+}
