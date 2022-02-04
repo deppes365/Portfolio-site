@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio-site/static/css/main.ad0f92a8.css",
+    "main.js": "/portfolio-site/static/js/main.33c229d4.js",
+    "static/media/home-img.jpg": "/portfolio-site/static/media/home-img.035fc92eaeb2e69c1209.jpg",
+    "static/media/eppeseverafter.png": "/portfolio-site/static/media/eppeseverafter.1237cad2cf5a96c26fa8.png",
+    "static/media/portfolio-pic.png": "/portfolio-site/static/media/portfolio-pic.2e6459851a6fa65f8e4f.png",
+    "static/media/weatherAppImg.png": "/portfolio-site/static/media/weatherAppImg.f0e63d5893624567583b.png",
+    "index.html": "/portfolio-site/index.html",
+    "main.ad0f92a8.css.map": "/portfolio-site/static/css/main.ad0f92a8.css.map",
+    "main.33c229d4.js.map": "/portfolio-site/static/js/main.33c229d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad0f92a8.css",
+    "static/js/main.33c229d4.js"
+  ]
+}
