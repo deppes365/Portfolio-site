@@ -1,111 +1,112 @@
-@import "../../assets/variables.scss";
-@import "../../assets/breakpoints.scss";
+@import '../../assets/variables.scss';
+@import '../../assets/breakpoints.scss';
 
 .contact-form {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    box-shadow: -6px 5px 15px 0px rgba(0,0,0,0.5);
-    border-radius: 30px;
-    transition: 0.3s ease;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	box-shadow: -6px 5px 15px 0px rgba(0, 0, 0, 0.5);
+	border-radius: 30px;
+	transition: 0.3s ease;
 
-    @include sm {
-        box-shadow: -6px 5px 15px 0px rgba(0,255,127,0.5);
-    }
+	@include sm {
+		box-shadow: -6px 5px 15px 0px rgba(0, 255, 127, 0.5);
+	}
 
-    &:hover {
-        box-shadow: -6px 5px 15px 0px rgba(0,255,127,0.5);
-    }
-    h1 {
-        font-weight: 200;
-        color: white;
-        margin-bottom: 0.5rem;
-    }
+	&:hover {
+		box-shadow: -6px 5px 15px 0px rgba(0, 255, 127, 0.5);
+	}
+	h1 {
+		font-weight: 200;
+		color: white;
+		margin-bottom: 0.5rem;
+	}
 
-    form {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        height: auto;
+	form {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		height: auto;
 
-        .send-status {
-            min-width: 50%;
-            margin: 0.5rem auto;
-            text-align: center;
-            padding: 0.25rem;
-            border-radius: 20px;
-            display: none;
+		.send-status {
+			min-width: 50%;
+			margin: 0.5rem auto;
+			text-align: center;
+			padding: 0.25rem;
+			border-radius: 20px;
+			display: none;
 
-            &.sent {
-                background-color: springgreen;
-                color: $dark;
-            }
+			&.sent {
+				background-color: springgreen;
+				color: $dark;
+			}
 
-            &.not-sent {
-                background-color: #FF5C33;
-                color: $dark;
-            }
-        }
+			&.not-sent {
+				background-color: #ff5c33;
+				color: $dark;
+			}
+		}
 
-        input {
-            height: 1.5rem;
-            padding: 0.25rem 0.5rem;
-            outline: none;
-            border: none;
-            margin: 0.5rem;
-            background-color: $dark;
-            border-bottom: 2px solid springgreen;
-            font-size: 1.2rem;
-            color: white;
-        }
+		input {
+			height: 1.5rem;
+			padding: 0.25rem 0.5rem;
+			outline: none;
+			border: none;
+			margin: 0.5rem;
+			background-color: $dark;
+			border-bottom: 2px solid springgreen;
+			font-size: 1.2rem;
+			color: white;
+			border-radius: 0;
+		}
 
-        textarea {
-            margin-top: 0.5rem;
-            background-color: $dark;
-            padding: 1rem;
-            outline: 0;
-            border: 0;
-            border-left: 2px solid transparent;
-            color: white;
-            font-size: 1rem;
-            &:focus {
-                border-left: 2px solid springgreen;
-            }
-        }
-        input:-webkit-autofill,
-        input:-webkit-autofill:hover, 
-        input:-webkit-autofill:focus,
-        textarea:-webkit-autofill,
-        textarea:-webkit-autofill:hover,
-        textarea:-webkit-autofill:focus {
-            border-bottom: 2px solid springgreen;
-            -webkit-text-fill-color: white;
-            -webkit-box-shadow: 0 0 0px 1000px $dark inset;
-            transition: background-color 5000s ease-in-out 0s;
-        }
+		textarea {
+			margin-top: 0.5rem;
+			background-color: $dark;
+			padding: 1rem;
+			outline: 0;
+			border: 0;
+			border-left: 2px solid transparent;
+			color: white;
+			font-size: 1rem;
+			border-radius: 0;
+			&:focus {
+				border-left: 2px solid springgreen;
+			}
+		}
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		textarea:-webkit-autofill,
+		textarea:-webkit-autofill:hover,
+		textarea:-webkit-autofill:focus {
+			border-bottom: 2px solid springgreen;
+			-webkit-text-fill-color: white;
+			-webkit-box-shadow: 0 0 0px 1000px $dark inset;
+			transition: background-color 5000s ease-in-out 0s;
+		}
 
-        button {
-            width: 40%;
-            margin: 1rem auto;
-            outline: 0;
-            border: 2px solid springgreen;
-            background-color: $dark;
-            color: springgreen;
-            padding: 0.25rem;
-            font-size: 1.2rem;
-            border-radius: 20px;
-            transition: 0.3s ease;
+		button {
+			width: 40%;
+			margin: 1rem auto;
+			outline: 0;
+			border: 2px solid springgreen;
+			background-color: $dark;
+			color: springgreen;
+			padding: 0.25rem;
+			font-size: 1.2rem;
+			border-radius: 20px;
+			transition: 0.3s ease;
 
-            &:hover {
-                background-color: springgreen;
-                color: $dark;
-                border: 2px solid springgreen;
-            }
-        }
-
-    }
+			&:hover {
+				background-color: springgreen;
+				color: $dark;
+				border: 2px solid springgreen;
+			}
+		}
+	}
 }

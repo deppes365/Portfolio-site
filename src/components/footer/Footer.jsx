@@ -1,7 +1,6 @@
 import React from 'react';
 import './footer.scss';
 import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 
 function Footer() {

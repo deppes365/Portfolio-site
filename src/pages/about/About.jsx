@@ -11,7 +11,7 @@ import {
 	FaReact,
 } from 'react-icons/fa';
 import { SiJavascript } from 'react-icons/si';
-import { Link} from 'react-router-dom';
+
 
 const aboutIcons = [
 	<FaHtml5 className='about-icon'/>,

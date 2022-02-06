@@ -1,9 +1,9 @@
 import React from 'react';
 import './portfolio.scss';
 import PortfolioCard from '../../components/portfolio-card/PortfolioCard';
-import weatherAppImg from '../../assets/images/weatherAppImg.png';
-import eppesEverAfter from '../../assets/images/eppeseverafter.png';
-import portfolioImg from '../../assets/images/portfolio-pic.png';
+import weatherAppImg from '../../assets/images/weatherAppImg.jpg';
+import eppesEverAfter from '../../assets/images/eppeseverafter.jpg';
+import portfolioImg from '../../assets/images/portfolio-pic.jpg';
 
 function Portfolio() {
 	return (
