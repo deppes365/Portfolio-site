@@ -7,7 +7,7 @@
     color: white;
 
     .container {
-        @include container(column, start, center);
+        @include container(column, flex-start, center);
     }
 
     .about-content-wrapper {
@@ -48,7 +48,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: start;
+            align-items: flex-start;
             gap: 1rem 1.5rem;
             padding: 1rem;
             @include md {
