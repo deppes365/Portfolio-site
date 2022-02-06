@@ -10,9 +10,9 @@ function Footer() {
       <h1 className='logo'>Darren <span>Eppes</span></h1>
       <p>Copyright &copy; 2022 Darren Eppes. All Rights Reserved</p>
       <div className="social-links">
-       <a href='https://www.instagram.com/darren.codes/' target='_blank'><FaInstagram/></a>
-        <a href="https://www.linkedin.com/in/darren-eppes-b71629230/" target='_blank'><FaLinkedinIn/></a>
-        <a href="https://github.com/deppes365/" target='_blank'><FaGithub/></a>
+       <a href='https://www.instagram.com/darren.codes/' target='_blank' rel="noreferrer"><FaInstagram/></a>
+        <a href="https://www.linkedin.com/in/darren-eppes-b71629230/" target='_blank' rel="noreferrer"><FaLinkedinIn/></a>
+        <a href="https://github.com/deppes365/" target='_blank' rel="noreferrer"><FaGithub/></a>
       </div>
     </div>
   </div>

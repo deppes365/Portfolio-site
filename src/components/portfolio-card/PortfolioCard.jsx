@@ -17,8 +17,8 @@ function PortfolioCard({ title, image, list, tech, liveLink, codeLink}) {
         </ul>
       </div>
       <div className="buttons">
-        <a className='live-link' href={liveLink} target='_blank'>Live Demo</a>
-        <a className='code-link' href={codeLink} target='_blank'>View Code</a>
+        <a className='live-link' href={liveLink} target='_blank' rel="noreferrer">Live Demo</a>
+        <a className='code-link' href={codeLink} target='_blank' rel="noreferrer">View Code</a>
       </div>
   </div>
   );

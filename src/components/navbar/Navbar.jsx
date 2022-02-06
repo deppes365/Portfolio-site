@@ -35,16 +35,16 @@ function Navbar() {
 						Contact
 					</NavLink>
 					<div className="social-links">
-						<a href="https://www.instagram.com/darren.codes/" target="_blank">
+						<a href="https://www.instagram.com/darren.codes/" target="_blank" rel="noreferrer">
 							<FaInstagram />
 						</a>
 						<a
 							href="https://www.linkedin.com/in/darren-eppes-b71629230/"
-							target="_blank"
+							target="_blank" rel="noreferrer"
 						>
 							<FaLinkedinIn />
 						</a>
-						<a href="https://github.com/deppes365/" target="_blank">
+						<a href="https://github.com/deppes365/" target="_blank" rel="noreferrer">
 							<FaGithub />
 						</a>
 					</div>
