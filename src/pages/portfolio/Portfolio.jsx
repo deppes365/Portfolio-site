@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './portfolio.scss';
 import PortfolioCard from '../../components/portfolio-card/PortfolioCard';
 import weatherAppImg from '../../assets/images/weatherAppImg.jpg';
@@ -6,12 +6,19 @@ import eppesEverAfter from '../../assets/images/eppeseverafter.jpg';
 import portfolioImg from '../../assets/images/portfolio-pic.jpg';
 
 function Portfolio() {
+
+	useEffect(() => {
+		setTimeout(()=> {
+			document.querySelector('.portfolio .container').classList.add('show')
+		}, 200)
+	}, [])
+
 	return (
 		<div className="portfolio">
+			<div className="container">
 			<h1 className="page-title">
 				<span>P</span>ortfolio
 			</h1>
-			<div className="container">
 				<PortfolioCard
 					title="My Portfolio Website"
 					list={[

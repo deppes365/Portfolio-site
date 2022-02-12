@@ -1,15 +1,21 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './contact.scss';
 import ContactForm from '../../components/contactForm/ContactForm';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone,} from 'react-icons/fa';
 
 
 function Contact() {
+
+  useEffect(() => {
+		setTimeout(()=> {
+			document.querySelector('.contact .container').classList.add('show')
+		}, 200)
+	}, [])
   
   return (
   <div className='contact'>
-    <h1 className='page-title'><span>C</span>ontact</h1>
       <div className="container">
+      <h1 className='page-title'><span>C</span>ontact</h1>
           <div className="form">
             <ContactForm />
           </div>

@@ -11,8 +11,8 @@ function PortfolioCard({ title, image, list, tech, liveLink, codeLink}) {
         <h1>{title}</h1>
         <h3 className='tech'>{tech.join(', ')}</h3>
         <ul className="bullet-points">
-            {list.map(item => {
-                return <li>{item}</li>
+            {list.map((item, i) => {
+                return <li key={i}>{item}</li>
             })}
         </ul>
       </div>

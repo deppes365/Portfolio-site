@@ -23,6 +23,12 @@
         @include container(row, space-evenly, stretch);
         gap: 2rem;
         padding-bottom: 4rem;
+        opacity: 0;
+        transition: 0.4s ease;
+
+        &.show {
+            opacity: 1;
+        }
 
         .form {
             flex-basis: 40%;

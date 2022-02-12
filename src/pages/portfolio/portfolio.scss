@@ -8,6 +8,7 @@
     justify-content: flex-start;
     align-items: center;
     
+    
     .page-title {
         color: white;
         font-weight: 200;
@@ -19,8 +20,16 @@
             color: springgreen
         }
     }
+
     .container {
         @include container(row, center, stretch);
         gap: 2rem;
+        opacity: 0;
+        transition: 0.4s ease;
+        
+
+        &.show {
+            opacity: 1;
+        }
     }
 }

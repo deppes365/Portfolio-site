@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './about.scss';
 import {
 	FaHtml5,
@@ -26,6 +26,13 @@ const aboutIcons = [
 ];
 
 function About() {
+
+	useEffect(() => {
+		setTimeout(()=> {
+			document.querySelector('.about .container').classList.add('show')
+		}, 200)
+	}, [])
+
 	return (
 		<div className="about">
 			<div className="container">
